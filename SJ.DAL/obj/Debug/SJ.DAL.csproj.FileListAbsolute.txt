@@ -1,0 +1,7 @@
+C:\Produtos\SJ\SJ.DAL\obj\Debug\SJ.DAL.csprojResolveAssemblyReference.cache
+C:\Produtos\SJ\SJ.DAL\bin\Debug\SJ.DAL.dll
+C:\Produtos\SJ\SJ.DAL\bin\Debug\SJ.DAL.pdb
+C:\Produtos\SJ\SJ.DAL\bin\Debug\SubSonic.dll
+C:\Produtos\SJ\SJ.DAL\obj\Debug\SJ.DAL.dll
+C:\Produtos\SJ\SJ.DAL\obj\Debug\SJ.DAL.pdb
+C:\Produtos\SJ\SJ.DAL\bin\Debug\MySql.Data.dll

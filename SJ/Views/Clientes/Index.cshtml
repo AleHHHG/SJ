@@ -1,0 +1,67 @@
+﻿@model  SJ.DAL.ClienteCollection
+@{
+    ViewBag.Title = "Clientes";
+}
+<div class="page-header">
+    <h3>
+        @ViewBag.Title
+        <a href="@Url.Action("Create")" class="btn btn-primary pull-right">
+            <i class="fas fa-plus-square"></i> Novo Registro
+        </a>
+    </h3>
+</div>
+
+@if (!string.IsNullOrEmpty(ViewBag.Mensagem))
+{
+   <div class="alert alert-success"><i class="fas fa-check-circle"></i> @ViewBag.Mensagem</div>
+}
+else if (!string.IsNullOrEmpty(ViewBag.MensagemErro))
+{
+    <div class="alert alert-danger"><i class="fas fa-times-circle"></i>  @ViewBag.MensagemErro</div>
+}
+
+@if (Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>Celular</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Nome</td>
+                    <td>@item.Telefone</td>
+                    <td>@item.Celular</td>
+                    <td>
+                        @Html.ActionLink(
+                        "Editar",
+                        "Update",
+                        new { id = item.Id },
+                        new {@class = "btn btn-success btn-sm" }
+                        )
+
+                        @Html.ActionLink(
+                        "Deletar",
+                        "Delete",
+                        new { id = item.Id },
+                        new { @class = "btn btn-danger btn-sm", onclick = "return confirm('Tem certeza que deseja remover esse item?');" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-warning">
+        <i class="far fa-info-circle"></i> Não existe registros cadastrado: <a href="@Url.Action("Create")">clique aqui</a> para criar um novo registro
+    </div>
+}
+
+

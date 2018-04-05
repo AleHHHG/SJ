@@ -1,0 +1,9 @@
+C:\Produtos\SJ\SJ.Negocio\bin\Debug\SJ.Negocio.dll
+C:\Produtos\SJ\SJ.Negocio\bin\Debug\SJ.Negocio.pdb
+C:\Produtos\SJ\SJ.Negocio\bin\Debug\SubSonic.dll
+C:\Produtos\SJ\SJ.Negocio\obj\Debug\SJ.Negocio.dll
+C:\Produtos\SJ\SJ.Negocio\obj\Debug\SJ.Negocio.pdb
+C:\Produtos\SJ\SJ.Negocio\bin\Debug\SJ.DAL.dll
+C:\Produtos\SJ\SJ.Negocio\bin\Debug\SJ.DAL.pdb
+C:\Produtos\SJ\SJ.Negocio\obj\Debug\SJ.Negocio.csprojResolveAssemblyReference.cache
+C:\Produtos\SJ\SJ.Negocio\bin\Debug\MySql.Data.dll

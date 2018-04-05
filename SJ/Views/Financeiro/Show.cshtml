@@ -1,0 +1,26 @@
+﻿@model SJ.DAL.Financeiro
+@{
+    ViewBag.Title = "Pedido N°";
+}
+<div class="page-header">
+    <h3>
+        @ViewBag.Title @Model.Id
+        <a href="javascript:;" class="btn btn-info pull-right">
+            <i class="fas fa-print"></i> Imprimir pedido
+        </a>
+    </h3>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-striped">
+            <tr>
+                <th>Valor Total</th>
+                <td>R$ @Model.Valor</td>
+            </tr>
+            <tr>
+                <th>Observação</th>
+                <td>@Model.Observacao</td>
+            </tr>
+        </table>
+    </div>
+</div>

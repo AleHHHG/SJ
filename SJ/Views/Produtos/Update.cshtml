@@ -1,0 +1,15 @@
+﻿@model SJ.DAL.Produto
+@{
+    ViewBag.Title = "Editar Registro";
+}
+<div class="page-header">
+    <h3>
+        @ViewBag.Title
+        <a href="@Url.Action("Index")" class="btn btn-default pull-right">
+            <i class="fas fa-arrow-circle-left"></i> Voltar
+        </a>
+    </h3>
+</div>
+@{Html.RenderPartial("_Form", Model);}
+
+
